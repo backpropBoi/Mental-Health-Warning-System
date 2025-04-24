@@ -22,5 +22,5 @@ Dataset
 
 Project Structure:
 <br>
-
+The dataset, containing cleaned Reddit posts and depression labels, is loaded and split into training and testing sets. Text data is then preprocessed and tokenized using a BERT tokenizer. A custom PyTorch Dataset class is defined to handle tokenized text and labels, and DataLoaders are created for efficient batching. The core model is a BERT-LSTM neural network, which uses frozen BERT embeddings followed by a bidirectional LSTM and a dense output layer with sigmoid activation for binary classification. The model is trained using binary cross-entropy loss and the Adam optimizer over several epochs, with loss tracked per epoch. After training, the model is evaluated on the test set, reporting metrics such as accuracy, F1 score, and a detailed classification report. The code also generates and visualizes a confusion matrix and ROC curve to assess performance, and includes functionality for plotting precision-recall curves.The code also has a comparitive analysis of the BERT-LSTM model with naive bayes, KNN and decision tree algorithms.
 
