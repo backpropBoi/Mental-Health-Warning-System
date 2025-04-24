@@ -11,17 +11,16 @@ Project Overview
 This project aims to identify signs of depression in Reddit posts using machine learning. By analyzing user-generated text, the models attempt to classify whether a post reflects depressive symptoms. The main motivation is to explore how NLP and deep learning can support early detection of mental health issues in online communities.
 <br>
 
-Dataset<br>
+Dataset
+<br>
+1.Source: The dataset was taken from hugging face( hugginglearners/reddit-depression-cleaned)<br>
 
-Source: The dataset was taken from hugging face( hugginglearners/reddit-depression-cleaned)<br>
+2.Description: Each row contains a Reddit post and a binary label (is_depression), where 1 indicates the post is related to depression and 0 otherwise.<br>
 
-Description: Each row contains a Reddit post and a binary label (is_depression), where 1 indicates the post is related to depression and 0 otherwise.<br>
-
-Preprocessing: Text is cleaned and prepared for analysis (e.g., removing special characters, lowercasing).
+3.Preprocessing: Text is cleaned and prepared for analysis (e.g., removing special characters, lowercasing).
 <br>
 
-Project Structure:<br>
-Mental-Health-Model.ipynb: Main Jupyter notebook with code for data loading, preprocessing, model training, evaluation, and visualization.<br>
+Project Structure:
+<br>
 
-depression_dataset_reddit_cleaned.csv: Cleaned dataset used for training and testing models.<br>
 
